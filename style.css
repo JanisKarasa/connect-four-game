@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the background color of the entire page to a light purple */
+body {
+  background-color: #e7fdea;
+}
+
+/* Main Container */
+/* Styles for the main container of the page */
+#main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* container takes at least the full height of the viewport */
+  min-height: 100vh;
+}
+
+/* Player Details */
+/* Styles for a player container. */
+#player {
+  background-color: #c7fcce;
+  border: 8px solid #f0c13f;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  width: 550px;
+}
+
+/* Styles for the player type text inside the player container */
+#player-type {
+  color: #f0c13f;
+  font-family: "Poppins";
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Grid */
+/* Styles for a grid container */
+#grid {
+  background-color: #f0c13f;
+  border: 3.5px solid #e7fdea;
+  border-radius: 8px;
+  box-shadow: 2px 3px 7px grey;
+  margin-top: 50px;
+  max-width: 600px;
+  padding: 3px;
+}
+
+/* Grid Row */
+/* Styles for a grid row */
+.row {
+  display: flex;
+}
+
+/* Grid Column */
+/* Styles for a grid column */
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7fcce;
+  border: 1px solid #f0c13f;
+  border-radius: 5px;
+  height: 75px;
+  margin: 5px;
+  width: 75px;
+}
+
+/* Buttons */
+/* Styles for generic buttons */
+.btn {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+/* Styles for a reset button and its hover effect */
+#reset-btn {
+  background-color: transparent;
+  border: 2px solid #f0c13f;
+  border-radius: 5px;
+  color: #f0c13f;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  margin: 50px 0;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: 0.7s;
+}
+
+#reset-btn:hover {
+  background-color: #f0c13f;
+  color: #e7fdea;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/* Styles for buttons specific to Player 1 and Player 2 */
+/* Player - 1 Buttons */
+.btn-player-1 {
+  background-color: #279254;
+  border: 2px solid #34c471;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/* Player - 2 Buttons */
+.btn-player-2 {
+  background-color: #a32753;
+  border: 2px solid #df3670;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  #grid {
+    width: 500px;
+  }
+
+  .col {
+    height: 62px;
+    margin: 4px;
+    width: 62px;
+  }
+
+  #player {
+    width: 450px;
+  }
+
+  #reset-btn {
+    font-size: 1.2rem;
+  }
+
+  .btn-player-1 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .btn-player-2 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  #grid {
+    width: 400px;
+  }
+
+  .col {
+    height: 50px;
+    margin: 3px;
+    width: 50px;
+  }
+
+  #player {
+    width: 350px;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+  }
+
+  .btn-player-1 {
+    height: 30px;
+    width: 30px;
+  }
+
+  .btn-player-2 {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  #grid {
+    width: 90%;
+  }
+
+  .col {
+    height: 40px;
+    margin: 2px;
+  }
+
+  #player {
+    align-items: center;
+    display: flex;
+    border-width: 5px;
+    justify-content: center;
+    height: 30px;
+    width: 78%;
+  }
+
+  #player-type {
+    font-size: 1.2rem;
+  }
+
+  #reset-btn {
+    font-size: 0.8rem;
+  }
+
+  .btn-player-1 {
+    height: 20px;
+    width: 20px;
+  }
+
+  .btn-player-2 {
+    height: 20px;
+    width: 20px;
+  }
+}
